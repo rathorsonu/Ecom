@@ -1,0 +1,93 @@
+<nav class="navbar  navbar-inverse">
+  <div class="container-fluid">
+    <!-- FOOTER START================== -->
+    <footer class="footer">
+      <div class="container">
+
+
+        <hr class="style15">
+
+        <div class="row">
+          <div class="col-sm-3">
+            <h4 class="title">About us</h4>
+            <p>With 5 years market experience we are here to give you the best products on the best price .</p>
+          </div>
+          <div class="col-sm-3">
+            <h4 class="title">My Account</h4>
+            <span class="acount-icon">
+              <%= link_to orders_path do %>
+              <i class="fa fa-heart" aria-hidden="true"></i>
+              Orders
+            <% end %>
+            <%= link_to cart_path(@current_cart) do %>
+            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+            Cart
+          <% end %>
+          <%= link_to current_user do %>
+          <i class="fa fa-user" aria-hidden="true"></i>
+          Profile
+        <% end %>
+        <%= link_to users_path do %>
+        <i class="fa fa-users" aria-hidden="true"></i>
+        Users
+      <% end %>
+      <!-- <a href="#"> <i class="fa fa-globe" aria-hidden="true"></i> Language</a> -->
+    </span>
+  </div>
+  <div class="col-sm-3">
+    <h4 class="title">Category</h4>
+    <div class="category">
+      <a href="#">Camcorder</a>
+      <a href="#">Camera</a>
+      <a href="#">phone</a>
+      <a href="#">Hidden camera</a>
+      <a href="#">Security camera</a>
+      <a href="#">Toys camera </a>
+      <a href="#">DSLR</a>
+      <a href="#">Video Camera</a>
+      <a href="#">Trafic Camera</a>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <h4 class="title">Payment Methods</h4>
+    <p>You can pay using...</p>
+    <ul class="payment">
+      <li>
+        <a href="#">
+          <i class="fa fa-cc-amex" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-credit-card" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-paypal" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-cc-visa" aria-hidden="true"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<hr class="style18">
+
+<div class="row text-center">
+  ©
+  <%= Date.today.year %>
+  .
+</div>
+</div>
+
+</footer>
+
+</div>
+</div>
+
+</div>
+</nav>
